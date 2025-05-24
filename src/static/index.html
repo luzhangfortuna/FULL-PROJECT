@@ -1,0 +1,23 @@
+<!-- Add to index.html -->
+<div class="sidebar">
+    <h3>Quick Insights</h3>
+    <button onclick="askQuestion('What were the largest tech acquisitions?')">
+        Top Deals
+    </button>
+    <button onclick="askQuestion('Show me acquisition trends over time')">
+        Trends Analysis
+    </button>
+    <button onclick="askQuestion('Which companies are the most active acquirers?')">
+        Active Acquirers
+    </button>
+    <button onclick="askQuestion('Analyze acquisitions in AI and machine learning')">
+        AI/ML Deals
+    </button>
+</div>
+
+<script>
+function askQuestion(question) {
+    messageInput.value = question;
+    form.dispatchEvent(new Event('submit'));
+}
+</script>
